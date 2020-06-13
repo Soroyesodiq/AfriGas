@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    android:layout_marginBottom="20dp"
+   >
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/date_hostel"
+            android:hint="September 28, 2019, Awo hostel"
+            android:paddingLeft="15dp"
+            android:singleLine="true"
+            android:textStyle="bold"
+            android:textSize="19dp"
+            android:textColor="@color/colorPrimaryDark"
+            />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:id="@+id/gasQuantity_name"
+            android:hint="3kg of Gas by Shoroye"
+            android:paddingLeft="15dp"
+            android:singleLine="true"
+            android:textStyle="bold"
+            android:textSize="19sp"
+            android:textColor="@color/colorPrimaryDark"/>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:paddingLeft="15dp"
+            android:text="Click for more details and proof"
+            android:textStyle="italic"
+            android:textColor="#D50000"/>
+
+    </LinearLayout>

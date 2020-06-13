@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    android:layout_marginBottom="10dp"
+    >
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/date_feedback"
+            android:hint="September 28, 2019, Awo hostel"
+            android:textStyle="bold"
+            android:textSize="19dp"
+            android:layout_marginLeft="10dp"
+            android:textColor="@color/colorPrimaryDark"
+            />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:id="@+id/phoneno_feedback"
+            android:hint="09033184368"
+            android:layout_marginLeft="10dp"
+            android:textStyle="bold"
+            android:textSize="19sp"
+            android:textColor="@color/colorPrimaryDark"/>
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:id="@+id/message_feedback"
+        android:hint="Well done"
+        android:layout_marginLeft="10dp"
+        android:textStyle="bold"
+        android:textSize="19sp"
+        android:textColor="@color/colorPrimaryDark"/>
+
+</LinearLayout>

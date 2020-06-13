@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:context=".eachUserOrder">
+
+    <item
+        android:id="@+id/action_accept"
+        android:title="Accept Order"
+        app:showAsAction="never" />
+
+    <item
+        android:id="@+id/action_decline"
+        android:title="Decline Order"
+        app:showAsAction="never" />
+
+    <item
+        android:id="@+id/action_delivered"
+        android:title="Order Delivered"
+        app:showAsAction="never" />
+    <item
+        android:id="@+id/action_send_proofs"
+        android:title="Send Proofs"
+        app:showAsAction="never" />
+    <item
+        android:id="@+id/action_send_notification"
+        android:title="Send Notification"
+        app:showAsAction="never" />
+
+</menu>

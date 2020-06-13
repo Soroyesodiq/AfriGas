@@ -1,0 +1,82 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.hfad.afrigas">
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="com.google.android.c2dm.permission.RECEIVE" />
+
+    <application
+        android:allowBackup="true"
+        android:icon="@drawable/applogo"
+        android:label="@string/app_name"
+        android:roundIcon="@drawable/applogo"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme">
+        <activity
+            android:name=".MainActivity"
+            android:label="@string/app_name"
+            android:theme="@style/AppTheme.NoActionBar">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name=".About"
+            android:parentActivityName=".MainActivity" />
+        <activity
+            android:name=".UserNotification"
+            android:parentActivityName=".MainActivity" />
+        <activity
+            android:name=".UserOrder"
+            android:parentActivityName=".MainActivity" />
+        <activity
+            android:name=".ContactUs2"
+            android:parentActivityName=".MainActivity" />
+        <activity
+            android:name=".UserFeedback"
+            android:parentActivityName=".MainActivity" />
+        <activity
+            android:name=".AdminAgentActivity"
+            android:parentActivityName=".MainActivity" />
+
+        <provider
+            android:name=".database.DataProvider"
+            android:authorities="com.hfad.afrigas"
+            android:exported="false" />
+
+        <activity
+            android:name=".eachUserOrder"
+            android:parentActivityName=".UserOrder" />
+        <activity
+            android:name=".ordersAdmin"
+            android:parentActivityName=".MainActivity" />
+        <activity
+            android:name=".FeedbackAdmin"
+            android:parentActivityName=".ordersAdmin" />
+        <activity
+            android:name=".AdminInfo"
+            android:parentActivityName=".ordersAdmin" />
+
+        <service
+            android:name=".MyFirebaseInstanceIDService"
+            >
+            <intent-filter>
+                <action android:name="com.google.firebase.INSTANCE_ID_EVENT" />
+            </intent-filter>
+        </service>
+
+        <service
+            android:name=".MyFirebaseMessagingService"
+            android:permission="com.google.android.c2dm.permission.SEND"
+           >
+
+            <intent-filter>
+                <action android:name="com.google.firebase.MESSAGING_EVENT" />
+                <action android:name="com.google.android.c2dm.intent.RECEIVE" />
+            </intent-filter>
+
+        </service>
+    </application>
+
+</manifest>

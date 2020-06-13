@@ -1,0 +1,297 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    app:layout_behavior="@string/appbar_scrolling_view_behavior"
+    tools:context=".MainActivity"
+    tools:showIn="@layout/app_bar_main">
+
+   <LinearLayout
+       android:layout_width="match_parent"
+       android:layout_height="wrap_content"
+       android:orientation="vertical"
+       android:background="#BBDEFB"
+       android:focusable="true"
+       android:focusableInTouchMode="true">
+
+           <TextView
+               android:id="@+id/gasprice"
+               android:layout_width="wrap_content"
+               android:layout_height="wrap_content"
+               android:text="Current price of gas = loading..."
+               android:textStyle="bold"
+               android:textSize="19dp"
+               android:inputType="textMultiLine"
+               android:textColor="@color/colorPrimaryDark"
+               />
+
+       <android.support.v7.widget.CardView
+           android:layout_width="match_parent"
+           android:layout_height="wrap_content"
+           android:layout_marginTop="10dp"
+           android:layout_marginStart="15dp"
+           android:layout_marginEnd="15dp"
+           app:cardElevation="15dp"
+           >
+           <TextView
+           android:id="@+id/ad_box"
+           android:layout_width="wrap_content"
+           android:layout_height="wrap_content"
+           android:text="loading..."
+           android:textStyle="bold"
+           android:textColor="#D50000"
+           android:layout_gravity="center"
+           android:inputType="textMultiLine"/>
+       </android.support.v7.widget.CardView>
+
+       <LinearLayout
+           android:layout_width="match_parent"
+           android:layout_height="wrap_content"
+           android:clipToPadding="false"
+           android:gravity="center"
+           android:orientation="horizontal">
+           <android.support.v7.widget.CardView
+               android:layout_width="match_parent"
+               android:layout_height="100dp"
+               android:layout_margin="10dp"
+               android:foreground="?android:attr/selectableItemBackground"
+               >
+               <LinearLayout
+                   android:layout_width="match_parent"
+                   android:layout_height="match_parent"
+                   android:orientation="horizontal"
+                   android:gravity="center">
+
+                   <ImageView
+                       android:layout_width="60dp"
+                       android:layout_height="60dp"
+                       android:src="@drawable/ic_phone_black_24dp"
+                       android:padding="10dp"
+                       android:contentDescription="TODO" />
+
+                   <LinearLayout
+                       android:layout_width="match_parent"
+                       android:layout_height="match_parent"
+                       android:orientation="vertical"
+                       android:gravity="start|center">
+                       <TextView
+                           android:layout_width="wrap_content"
+                           android:layout_height="wrap_content"
+                           android:text="Have No Data"
+                           android:textColor="@color/colorPrimary"
+                           android:textStyle="bold"
+                           android:textSize="18sp"/>
+
+                       <TextView
+                           android:layout_width="wrap_content"
+                           android:layout_height="wrap_content"
+                           android:textStyle="bold"
+                           android:textSize="18sp"
+                           android:layout_marginTop="10dp"
+                           android:textColor="@color/colorPrimary"
+                           android:text="Call/WhatsApp on 09033184368"/>
+
+                   </LinearLayout>
+
+               </LinearLayout>
+
+           </android.support.v7.widget.CardView>
+
+       </LinearLayout>
+
+       <TextView
+           android:layout_width="match_parent"
+           android:layout_height="wrap_content"
+           android:id="@+id/info_box_up"
+           android:textStyle="bold"
+           android:textColor="@color/colorPrimary"
+           android:singleLine="false"
+           android:text="loading..."
+           />
+
+       <android.support.v7.widget.CardView
+           android:layout_width="match_parent"
+           android:layout_height="wrap_content"
+           android:layout_margin="10dp"
+           android:foreground="?android:attr/selectableItemBackground"
+           >
+
+           <LinearLayout
+               android:layout_width="match_parent"
+               android:layout_height="match_parent"
+               android:orientation="vertical"
+               android:background="#BBDEFB"
+               android:gravity="center">
+
+               <TextView
+                   android:layout_width="wrap_content"
+                   android:layout_height="wrap_content"
+                   android:textStyle="bold"
+                   android:text="BUY GAS WITH EASE: PLACE YOUR ORDER"
+                   android:layout_gravity="center"
+                   android:layout_marginTop="15dp"
+                   android:singleLine="true"
+                   android:textSize="19dp"
+                   android:textColor="@color/colorPrimaryDark"
+                   />
+
+
+
+               <LinearLayout
+                   android:layout_width="match_parent"
+                   android:layout_height="wrap_content"
+                   android:orientation="horizontal"
+                   android:layout_marginLeft="15dp"
+                   android:layout_marginRight="15dp"
+                   android:layout_marginBottom="10dp"
+                   android:layout_marginTop="10dp"
+                   android:padding="20dp"
+                   android:background="@drawable/input_design"
+                   >
+
+                   <TextView
+                       android:layout_width="wrap_content"
+                       android:layout_height="wrap_content"
+                       android:hint="Quantity in kg: "
+                       android:textColor="@color/colorPrimaryDark"
+                       android:textColorHint="@color/colorPrimaryDark"
+                       android:textSize="19sp"
+                       />
+
+                   <Spinner
+                       android:id="@+id/quantity_spinner"
+                       android:layout_width="wrap_content"
+                       android:layout_height="wrap_content"
+                       >
+
+                   </Spinner>
+
+               </LinearLayout>
+
+               <LinearLayout
+                   android:layout_width="match_parent"
+                   android:layout_height="wrap_content"
+                   android:orientation="horizontal"
+                   android:layout_marginLeft="15dp"
+                   android:layout_marginRight="15dp"
+                   android:layout_marginBottom="10dp"
+                   android:layout_marginTop="10dp"
+                   android:padding="20dp"
+                   android:background="@drawable/input_design"
+                   >
+
+                   <TextView
+                       android:layout_width="wrap_content"
+                       android:layout_height="wrap_content"
+                       android:hint="Hostel Name: "
+                       android:textColor="@color/colorPrimaryDark"
+                       android:textColorHint="@color/colorPrimaryDark"
+                       android:textSize="19sp"
+
+                       />
+                   <Spinner
+                       android:id="@+id/hostel_spinner"
+                       android:layout_width="wrap_content"
+                       android:layout_height="wrap_content"
+                       >
+
+                   </Spinner>
+
+               </LinearLayout>
+
+               <EditText
+                   android:id="@+id/name"
+                   android:layout_width="match_parent"
+                   android:layout_height="wrap_content"
+                   android:hint="Name e.g Soroye"
+                   android:background="@drawable/input_design"
+                   android:padding="20dp"
+                   android:layout_marginLeft="15dp"
+                   android:layout_marginRight="15dp"
+                   android:layout_marginTop="6dp"
+                   android:layout_marginBottom="10dp"
+                   android:textColor="@color/colorPrimaryDark"
+                   android:textColorHint="@color/colorPrimaryDark"
+                   android:textSize="19sp"
+                   android:singleLine="true"
+                   />
+
+
+               <EditText
+                   android:id="@+id/block_no"
+                   android:layout_width="match_parent"
+                   android:layout_height="wrap_content"
+                   android:hint="Block No"
+                   android:background="@drawable/input_design"
+                   android:padding="20dp"
+                   android:layout_marginLeft="15dp"
+                   android:layout_marginRight="15dp"
+                   android:layout_marginTop="6dp"
+                   android:layout_marginBottom="10dp"
+                   android:textColor="@color/colorPrimaryDark"
+                   android:textColorHint="@color/colorPrimaryDark"
+                   android:textSize="19sp"
+                   android:singleLine="true"
+                   />
+
+               <EditText
+                   android:id="@+id/room_no"
+                   android:layout_width="match_parent"
+                   android:layout_height="wrap_content"
+                   android:hint="Room No"
+                   android:background="@drawable/input_design"
+                   android:padding="20dp"
+                   android:layout_marginLeft="15dp"
+                   android:layout_marginRight="15dp"
+                   android:layout_marginTop="6dp"
+                   android:layout_marginBottom="10dp"
+                   android:textColor="@color/colorPrimaryDark"
+                   android:textColorHint="@color/colorPrimaryDark"
+                   android:textSize="19sp"
+                   android:singleLine="true" />
+               <EditText
+                   android:id="@+id/phone_no"
+                   android:layout_width="match_parent"
+                   android:layout_height="wrap_content"
+                   android:hint="Phone No"
+                   android:inputType="number"
+                   android:background="@drawable/input_design"
+                   android:padding="20dp"
+                   android:layout_marginLeft="15dp"
+                   android:layout_marginRight="15dp"
+                   android:layout_marginTop="6dp"
+                   android:layout_marginBottom="10dp"
+                   android:textColor="@color/colorPrimaryDark"
+                   android:textColorHint="@color/colorPrimaryDark"
+                   android:textSize="19sp"
+                   android:singleLine="true"
+                   />
+
+               <Button
+                   android:id="@+id/done_Button"
+                   android:layout_width="wrap_content"
+                   android:layout_height="wrap_content"
+                   android:text="DONE"
+                   android:textSize="19sp"
+                   android:layout_gravity="center"
+                   android:textColor="@color/colorPrimaryDark"
+                   android:background="@drawable/input_design"/>
+
+           </LinearLayout>
+
+       </android.support.v7.widget.CardView>
+
+       <TextView
+           android:layout_width="match_parent"
+           android:layout_height="wrap_content"
+           android:id="@+id/info_box"
+           android:inputType="textMultiLine"
+           android:textColor="@color/colorPrimary"
+           android:text="loading..."
+           />
+
+   </LinearLayout>
+
+</ScrollView>

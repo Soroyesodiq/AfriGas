@@ -1,0 +1,48 @@
+{
+  "project_info": {
+    "project_number": "612796472705",
+    "firebase_url": "https://afrigas-14b9b.firebaseio.com",
+    "project_id": "afrigas-14b9b",
+    "storage_bucket": "afrigas-14b9b.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:612796472705:android:a92b442e115d33fdad9c80",
+        "android_client_info": {
+          "package_name": "com.hfad.afrigas"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "612796472705-gis0morg8cmpbo3thnahc9jc546a3m43.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.hfad.afrigas",
+            "certificate_hash": "c62751fde672e2e9181b05430d52d09a76edd7af"
+          }
+        },
+        {
+          "client_id": "612796472705-npdb1dj47qnjdcom2vsdqts4phoh4ht6.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyABPZayOprHShij3lSXVJWTyNPhinjVhBg"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "612796472705-npdb1dj47qnjdcom2vsdqts4phoh4ht6.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
